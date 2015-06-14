@@ -7,7 +7,7 @@ from setuptools import setup, find_packages
 from setuptools.command.test import test as TestCommand
 
 
-version = '0'
+version = '1.0'
 
 
 class PyTest(TestCommand):
@@ -48,7 +48,7 @@ setup(
         'Operating System :: OS Independent',
         'Topic :: Software Development :: Version Control',
     ],
-    long_description='Turnstile - Zalando Local Git Hooks',
+    long_description=open('README.rst').read(),
     entry_points={'turnstile.commands': ['codevalidator = turnstile_codevalidator.command'],
                   'turnstile.pre_commit': ['codevalidator = turnstile_codevalidator.check']}
 )
