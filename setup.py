@@ -9,6 +9,7 @@ from setuptools.command.test import test as TestCommand
 
 version = '0'
 
+
 class PyTest(TestCommand):
 
     def initialize_options(self):
@@ -35,7 +36,7 @@ setup(
     author='Zalando SE',
     url='https://github.com/zalando/turnstile-codevalidator',
     license='Apache License Version 2.0',
-    install_requires=['click', 'GitPython', 'codevalidator'], #'turnstile-core'],
+    install_requires=['click', 'GitPython', 'codevalidator', 'turnstile-core'],
     tests_require=['pytest-cov', 'pytest'],
     cmdclass={'test': PyTest},
     classifiers=[
