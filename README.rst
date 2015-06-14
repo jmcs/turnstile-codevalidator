@@ -1,3 +1,12 @@
+.. image:: https://img.shields.io/pypi/v/turnstile-codevalidator.svg
+   :target: https://pypi.python.org/pypi/turnstile-codevalidator/
+   :alt: Latest PyPI version
+
+.. image:: https://img.shields.io/pypi/l/turnstile-codevalidator.svg
+   :target: https://github.com/zalando/turnstile-codevalidator/blob/master/LICENSE
+   :alt: License
+
+
 Turnstile-Codevalidator
 =======================
 
