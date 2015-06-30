@@ -18,7 +18,7 @@ from __future__ import print_function
 import subprocess
 
 import click
-import git
+import turnstile.common.git as git
 import turnstile.models.staging as staging
 
 import turnstile_codevalidator.check as check
@@ -38,7 +38,7 @@ def cmd(fix):
     """
     Executes the codevalidator check and optionally tries to fix the files.
     """
-    repository = git.Repo()
+    repository = git.get_repository()
     staging_area = staging.StagingArea(repository)
     codevalidator_rc = staging_area.working_dir / '.codevalidatorrc'
     with staging_area:
